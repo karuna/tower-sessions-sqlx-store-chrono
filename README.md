@@ -35,7 +35,7 @@ use serde::{Deserialize, Serialize};
 use time::Duration;
 use tokio::{signal, task::AbortHandle};
 use tower_sessions::{session_store::ExpiredDeletion, Expiry, Session, SessionManagerLayer};
-use tower_sessions_sqlx_store::{sqlx::MySqlPool, MySqlStore};
+use tower_sessions_sqlx_store_chrono::{sqlx::MySqlPool, MySqlStore};
 
 const COUNTER_KEY: &str = "counter";
 
@@ -115,7 +115,7 @@ use serde::{Deserialize, Serialize};
 use time::Duration;
 use tokio::{signal, task::AbortHandle};
 use tower_sessions::{session_store::ExpiredDeletion, Expiry, Session, SessionManagerLayer};
-use tower_sessions_sqlx_store::{sqlx::PgPool, PostgresStore};
+use tower_sessions_sqlx_store_chrono::{sqlx::PgPool, PostgresStore};
 
 const COUNTER_KEY: &str = "counter";
 
@@ -195,7 +195,7 @@ use serde::{Deserialize, Serialize};
 use time::Duration;
 use tokio::{signal, task::AbortHandle};
 use tower_sessions::{session_store::ExpiredDeletion, Expiry, Session, SessionManagerLayer};
-use tower_sessions_sqlx_store::{sqlx::SqlitePool, SqliteStore};
+use tower_sessions_sqlx_store_chrono::{sqlx::SqlitePool, SqliteStore};
 
 const COUNTER_KEY: &str = "counter";
 

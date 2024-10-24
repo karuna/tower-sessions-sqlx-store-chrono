@@ -21,7 +21,7 @@ impl PostgresStore {
     /// # Examples
     ///
     /// ```rust,no_run
-    /// use tower_sessions_sqlx_store::{sqlx::PgPool, PostgresStore};
+    /// use tower_sessions_sqlx_store_chrono::{sqlx::PgPool, PostgresStore};
     ///
     /// # tokio_test::block_on(async {
     /// let database_url = std::option_env!("DATABASE_URL").unwrap();
@@ -74,7 +74,7 @@ impl PostgresStore {
     /// # Examples
     ///
     /// ```rust,no_run
-    /// use tower_sessions_sqlx_store::{sqlx::PgPool, PostgresStore};
+    /// use tower_sessions_sqlx_store_chrono::{sqlx::PgPool, PostgresStore};
     ///
     /// # tokio_test::block_on(async {
     /// let database_url = std::option_env!("DATABASE_URL").unwrap();

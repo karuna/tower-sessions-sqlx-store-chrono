@@ -5,7 +5,7 @@ use serde::{Deserialize, Serialize};
 use time::Duration;
 use tokio::{signal, task::AbortHandle};
 use tower_sessions::{session_store::ExpiredDeletion, Expiry, Session, SessionManagerLayer};
-use tower_sessions_sqlx_store::{sqlx::MySqlPool, MySqlStore};
+use tower_sessions_sqlx_store_chrono::{sqlx::MySqlPool, MySqlStore};
 
 const COUNTER_KEY: &str = "counter";
 
