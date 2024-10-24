@@ -1,17 +1,17 @@
 [package]
 name = "tower-sessions-sqlx-store-chrono"
 description = "SQLx session stores for `tower-sessions` but using `chrono` instead of `time`."
-version = "0.14.0"
+version = "0.14.1"
 edition = "2021"
 authors = [
     "Karuna Murti <karuna.murti@gmail.com>",
     "Max Countryman <hello@maxcountryman.com>",
 ]
 license = "MIT"
-homepage = "https://github.com/karuna/tower-sessions-stores-chrono"
+homepage = "https://github.com/karuna/tower-sessions-sqlx-store-chrono"
 keywords = ["axum", "sessions", "cookie", "tower", "sqlx"]
 categories = ["asynchronous", "network-programming", "web-programming"]
-repository = "https://github.com/karuna/tower-sessions-stores-chrono"
+repository = "https://github.com/karuna/tower-sessions-sqlx-store-chrono"
 documentation = "https://docs.rs/tower-sessions-sqlx-store-chrono"
 readme = "README.md"
 
