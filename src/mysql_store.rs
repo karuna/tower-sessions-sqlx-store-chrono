@@ -5,7 +5,7 @@ use tower_sessions_core::{
     session_store, ExpiredDeletion, SessionStore,
 };
 
-use crate::{convert_expiry_date, current_time, SqlxStoreError};
+use crate::{convert_expiry_datetime, current_time, SqlxStoreError};
 
 /// A MySQL session store.
 #[derive(Clone, Debug)]
@@ -146,7 +146,7 @@ impl MySqlStore {
         sqlx::query(&query)
             .bind(record.id.to_string())
             .bind(rmp_serde::to_vec(&record).map_err(SqlxStoreError::Encode)?)
-            .bind(convert_expiry_date(record.expiry_date))
+            .bind(convert_expiry_datetime(record.expiry_date))
             .execute(conn)
             .await
             .map_err(SqlxStoreError::Sqlx)?;

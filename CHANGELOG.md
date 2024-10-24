@@ -1,4 +1,6 @@
-# Unreleased
+# 0.13.1
+
+- Update `sqlx` to `0.8.2`.
 
 # 0.13.0
 

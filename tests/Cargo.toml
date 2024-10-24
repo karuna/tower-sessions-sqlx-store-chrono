@@ -9,20 +9,16 @@ axum = "0.7"
 http = "1.0"
 http-body-util = "0.1"
 hyper = "1.0"
-time = "0.3.30"
+time = "0.3"
 tokio = { version = "1", features = ["full"] }
-tower = "0.4.13"
+tower = { version = "0.5", features = ["util"] }
 tower-cookies = "0.10.0"
-tower-sessions = "0.12.1"
-tower-sessions-sqlx-store = { path = "../sqlx-store/", features = [
+tower-sessions = "0.13"
+tower-sessions-sqlx-store-chrono = { path = "../", features = [
     "sqlite",
     "mysql",
     "postgres",
-    "time",
 ] }
-tower-sessions-redis-store = { path = "../redis-store/" }
-tower-sessions-mongodb-store = { path = "../mongodb-store/" }
-tower-sessions-moka-store = { path = "../moka-store/" }
 
 [[test]]
 name = "test_integration"
