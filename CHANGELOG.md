@@ -1,6 +1,8 @@
-# 0.13.1
+# 0.14
 
+- `sqlx` uses `chrono` instead of `time`
 - Update `sqlx` to `0.8.2`.
+- Update dependencies
 
 # 0.13.0
 
