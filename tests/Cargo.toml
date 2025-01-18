@@ -5,15 +5,15 @@ edition = "2021"
 publish = false
 
 [dev-dependencies]
-axum = "0.7"
-http = "1.0"
+axum = "0.8"
+http = "1.2"
 http-body-util = "0.1"
-hyper = "1.0"
+hyper = "1.5"
 time = "0.3"
 tokio = { version = "1", features = ["full"] }
 tower = { version = "0.5", features = ["util"] }
-tower-cookies = "0.10.0"
-tower-sessions = "0.13"
+tower-cookies = "0.11.0"
+tower-sessions = "0.14"
 tower-sessions-sqlx-store-chrono = { path = "../", features = [
     "sqlite",
     "mysql",

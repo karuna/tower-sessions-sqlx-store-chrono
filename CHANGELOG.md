@@ -1,5 +1,9 @@
 # 0.14.1
 
+- update `axum` to `0.8` along with other dependencies
+
+# 0.14.1
+
 - nothing new but fix homepage and repository
 
 # 0.14
